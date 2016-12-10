@@ -3,8 +3,15 @@
     padding-top: rem(24px);
     padding-bottom: rem(10px);
     text-decoration: none;
+    a:focus
+        {
+            color: white;
+            text-decoration: none;
+        }
 
-}
+    }
+
+
 
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background: transparent;
@@ -35,8 +42,11 @@
 }
 
 .menu__list-item {
-    margin-right: rem(42px);
+    margin-right: rem(70px);
 
+    @include desktop {
+        margin-right:rem(65px);
+    }
     @include laptop {
         margin-right: rem(28px);
     }
@@ -46,14 +56,8 @@
     }
 }
 
-a{
-    &:focus
-    {
-        color: white;
-        text-decoration: none;
-    }
 
-}
+
 
 .menu__list-link, .utils__list-link {
     color: #fff;
@@ -152,11 +156,13 @@ a{
                 border-radius: 20px;
                 left: rem(-77px);
                 background: #fff;
-                opacity: .92;
+                opacity: 0;
+                display: none;
                 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
                 font-size: rem(16px);
                 padding: rem(34px);
                 max-width: rem(226px);
+                transition: opacity .5s;
 
                 &:after {
                     content: '';
@@ -184,6 +190,7 @@ a{
             left: rem(-77px);
             background: #fff;
             opacity: .92;
+            display: block;
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-size: rem(16px);
             padding: rem(34px);

@@ -50,7 +50,7 @@
     }
 }
 
-.reasons__list {
+.reasons__bottom {
     margin-left: rem(-45px);
     
     @include laptop {
@@ -83,6 +83,7 @@
 .reasons__item_text {
     @include malina(16px);
     max-width: rem(144px);
+    color: $grey;
 
 }
 

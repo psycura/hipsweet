@@ -65,6 +65,11 @@
 .footer__socials{
     float: right;
     font-size:rem(22px);
+
+    a:focus{
+        color: $orange;
+        outline: none;
+    }
     
     @include tablet {
         margin-top: -74px;
@@ -74,13 +79,16 @@
 
 .social__link{
     color: $grey;
-    margin-left:rem(22px);
+    margin-left:rem(15px);
+    width:rem(30px);
 
     &:hover{
         color: $orange;
     }
     @include laptop {
-        margin-left:rem(14px);
+        margin-left:rem(10px);
+        width:rem(25px);
+
     }
 }
 
