@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'ALSMalina';
+    src: url('../fonts/ALSMalina.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ALSMalina.woff') format('woff'),
+    url('../fonts/ALSMalina.ttf')  format('truetype'),
+    url('../fonts/ALSMalina.svg#ALSMalina') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("../fonts/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProRegular.woff") format("woff"),
+    url("../fonts/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@mixin malina($size){
+    font-family:'ALSMalina';
+    font-size:rem($size);
+}
+
+@mixin myriad($size){
+    font-family:'MyriadProRegular';
+    font-size:rem($size);
+}

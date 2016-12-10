@@ -1,0 +1,145 @@
+.our-team {
+    background: linear-gradient(to right, rgba(220, 220, 221, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(220, 220, 221, 1) 100%);
+
+    color: $grey;
+    padding-bottom: rem(117px);
+    padding-top: rem(83px);
+
+    @include tablet {
+        padding-bottom: rem(70px);
+    }
+
+    .title {
+        color: #2a2e60;
+    }
+}
+
+.team__tabs-header {
+    margin-bottom: rem(60px);
+}
+
+.our-team__top_right {
+    padding-left: rem(55px);
+    @include laptop{
+        padding-left: 0;
+    }
+}
+
+.nav-pills {
+
+    li {
+        a {
+            text-decoration: none;
+
+            &:hover {
+                background-color: transparent;
+                .title {
+                    color: #ffa92b;
+                }
+            }
+        }
+    }
+    li.active {
+
+        .triangle {
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-bottom: 0;
+            border-top-color: #893213;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -10px;
+            z-index: 1000;
+
+        }
+
+        a {
+
+            border-radius: 20px;
+            background: #893213;
+            .title {
+                color: #ffa92b;
+            }
+            .member__acc {
+                color: #fff;
+            }
+            &:focus {
+                background: #893213;
+            }
+            &:hover {
+                background: #893213;
+            }
+
+        }
+    }
+}
+
+.members__list_item {
+    width: 33%;
+
+}
+
+.member__list-link {
+    padding: rem(23px);
+    &:focus {
+        color: $orange;
+        text-decoration: none;
+    }
+
+    .title {
+        line-height: rem(34px);
+        padding-bottom: rem(10px);
+    }
+
+}
+
+.tab-content{
+    @include tablet {
+        margin-bottom: rem(35px);
+    }
+}
+
+
+.member__name {
+    font-size: rem(30px);
+}
+
+.member__acc {
+    color: $grey;
+}
+
+.member__desc_left, .member__desc_right {
+    font-style: italic;
+    font-size: rem(14px);
+    padding-top: rem(50px);
+}
+
+.member__desc_left {
+    padding-left: 0;
+    padding-right: 0;
+    @include laptop{
+        padding-top:0;
+    }
+}
+
+.member__desc_img {
+    img {
+        max-width: 100%;
+    }
+
+    @include laptop{
+        display: none;
+    }
+}
+
+.member__desc_right {
+    padding-left: 0;
+    @include laptop{
+        margin-bottom:rem(15px);
+    }
+}
+
+
+
