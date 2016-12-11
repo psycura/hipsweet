@@ -1,217 +1,217 @@
 .slider {
 
-    background: $red;
-    padding-top: rem(60px);
-    padding-bottom: rem(124px);
-    color: #fff;
+  background: $red;
+  padding-top: rem(60px);
+  padding-bottom: rem(124px);
+  color: #fff;
 
-    @include tablet {
-        padding-top: 0;
-    }
+  @include tablet {
+    padding-top: 0;
+  }
 
 }
 
 .carousel-indicators {
-    bottom: -90px;
+  bottom: -90px;
+  .active {
+    margin-left: rem(25px);
+
+  }
+  li {
+    height: 8px;
+    width: 8px;
+    margin-left: rem(25px);
+
     .active {
-        margin-left: rem(25px);
-
+      height: 11px;
+      width: 11px;
     }
-    li {
-        height: 8px;
-        width: 8px;
-        margin-left: rem(25px);
-
-        .active {
-            height: 11px;
-            width: 11px;
-        }
-    }
+  }
 }
 
 .slide__left-block {
-    padding-top: rem(85px);
-    padding-left: 0px;
+  padding-top: rem(85px);
+  padding-left: 0px;
 
-    @include tablet {
-        padding-top: rem(50px);
-    }
+  @include tablet {
+    padding-top: rem(50px);
+  }
 }
 
 .slider-ingredients {
 
-    margin-bottom: 20px;
-    margin-left: rem(38px);
-    position: relative;
+  margin-bottom: 20px;
+  margin-left: rem(38px);
+  position: relative;
 
-    @include tablet {
-        display: inline-block;
-    }
+  @include tablet {
+    display: inline-block;
+  }
+
+  .sprite-eggbeater {
+    width: 18px;
+    height: 18px;
+    background-position: -65px -37px;
+  }
+
+  &:hover {
 
     .sprite-eggbeater {
-        width: 18px;
-        height: 18px;
-        background-position: -65px -37px;
+      background-position: -93px -37px;
+
     }
+    .ingredients__popup {
+      left: rem(94px);
+      opacity: .92;
 
-    &:hover {
-
-        .sprite-eggbeater {
-            background-position: -93px -37px;
-
-        }
-        .ingredients__popup {
-            left: rem(94px);
-            opacity: .92;
-
-        }
     }
+  }
 }
 
 .ingredients__popup {
+  position: absolute;
+  border-radius: 20px;
+  left: -9999px;
+  top: rem(-65px);
+  background: #fff;
+  opacity: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: rem(16px);
+  padding: rem(33px);
+  z-index: 1000;
+  width: rem(350px);
+  transition: opacity .5s;
+
+  .left-block {
+    float: left;
+  }
+
+  .right-block {
+    float: right;
+  }
+
+  &:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border: 25px solid transparent;
+    border-left: 0;
+    border-right-color: #fff;
     position: absolute;
-    border-radius: 20px;
-    left: -9999px;
-    top: rem(-65px);
-    background: #fff;
-    opacity: 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: rem(16px);
-    padding: rem(33px);
+    right: 100%;
+    bottom: 58%;
+    margin-bottom: -10px;
+    margin-right: 0;
     z-index: 1000;
-    width: rem(350px);
-    transition: opacity .5s;
-
-    .left-block {
-        float: left;
-    }
-
-    .right-block {
-        float: right;
-    }
-
-    &:after {
-        content: '';
-        width: 0;
-        height: 0;
-        border: 25px solid transparent;
-        border-left: 0;
-        border-right-color: #fff;
-        position: absolute;
-        right: 100%;
-        bottom: 58%;
-        margin-bottom: -10px;
-        margin-right: 0;
-        z-index: 1000;
-    }
+  }
 }
 
 .ingredient__item {
-    padding-bottom: rem(35px);
+  padding-bottom: rem(35px);
 }
 
 .ingredient__item-icon {
-    display: inline-block;
-    vertical-align: bottom;
-    min-width: rem(28px);
-    text-align: center;
+  display: inline-block;
+  vertical-align: bottom;
+  min-width: rem(28px);
+  text-align: center;
 }
 
 .ingredient__item-name {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: rem(13px);
-    color: $grey;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: rem(13px);
+  color: $grey;
 
 }
 
 .ingredient__item-qty {
-    color: $grey;
+  color: $grey;
 }
 
 .ingredients-title {
-    font-size: rem(14px);
-    margin-bottom: rem(197px);
-    padding-left: rem(15px);
+  font-size: rem(14px);
+  margin-bottom: rem(197px);
+  padding-left: rem(15px);
 
-    @include tablet {
-        display: inline-block;
-        margin-bottom: 0;
-    }
+  @include tablet {
+    display: inline-block;
+    margin-bottom: 0;
+  }
 
 }
 
 .slider__time {
-    @include tablet {
-        display: inline-block;
-        float: right;
-    }
+  @include tablet {
+    display: inline-block;
+    float: right;
+  }
 }
 
 .slider__time-title {
-    font-size: rem(13px);
-    padding-left: rem(15px);
-    opacity: 0.28;
+  font-size: rem(13px);
+  padding-left: rem(15px);
+  opacity: 0.28;
 }
 
 .slider__time-time {
-    @include malina(24px);
-    line-height: rem(19px);
+  @include malina(24px);
+  line-height: rem(19px);
 
 }
 
 .carousel-caption {
-    padding-top: rem(34px);
+  padding-top: rem(34px);
 
-    .caption-title {
+  .caption-title {
 
-        margin-bottom: rem(24px);
-    }
+    margin-bottom: rem(24px);
+  }
 
-    p {
-        font-size: rem(15px);
+  p {
+    font-size: rem(15px);
 
-    }
+  }
 
 }
 
 .title {
-    @include malina(62px);
-    font-weight: 100;
-    line-height: rem(75px);
+  @include malina(62px);
+  font-weight: 100;
+  line-height: rem(75px);
 
-    @include laptop {
-        font-size: 3.5rem;
-    }
+  @include laptop {
+    font-size: 3.5rem;
+  }
 }
 
-.price__block{
-    @include tablet {
-        float: right;
-    }
+.price__block {
+  @include tablet {
+    float: right;
+  }
 }
 
 .caption-price {
-    @include malina(62px);
-    display: inline-block;
-    vertical-align: middle;
+  @include malina(62px);
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .caption__order-button {
-    display: inline-block;
-    background: $orange;
-    color: $red;
-    padding: 11px 21px;
-    vertical-align: middle;
-    margin-left: rem(40px);
-    border-radius: 20px;
-    font-weight: 700;
-    font-size: rem(14px);
+  display: inline-block;
+  background: $orange;
+  color: $red;
+  padding: 11px 21px;
+  vertical-align: middle;
+  margin-left: rem(40px);
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: rem(14px);
 
-    &:hover {
-        text-decoration: none;
-        color: white;
-    }
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 
