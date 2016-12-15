@@ -419,8 +419,11 @@ body {
     .container {
       width: auto; } }
 
-* {
+html {
   box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
 
 li {
   list-style: none; }
